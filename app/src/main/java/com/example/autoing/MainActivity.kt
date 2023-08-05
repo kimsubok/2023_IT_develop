@@ -12,3 +12,4 @@ class MainActivity : AppCompatActivity() {
 
 
 //안녕 칭구들
+//방가워 칭구들
