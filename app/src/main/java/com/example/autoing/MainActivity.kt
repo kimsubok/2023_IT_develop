@@ -16,3 +16,4 @@ class MainActivity : AppCompatActivity() {
 //커밋 되나요?? 연우입니다 (1:44am )
 //또 할 수 있지롱 ㅎ
 //되나요??? 제발제발
+//예령이의 하이를 기리며,,, 저 커밋 잘되는듯
