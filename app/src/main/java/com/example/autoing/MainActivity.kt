@@ -14,3 +14,4 @@ class MainActivity : AppCompatActivity() {
 //안녕 칭구들
 //방가워 칭구들
 //하이~
+//또 할 수 있지롱 ㅎ
