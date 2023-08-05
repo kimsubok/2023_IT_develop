@@ -18,3 +18,4 @@ class MainActivity : AppCompatActivity() {
 //되나요??? 제발제발
 //예령이의 하이를 기리며,,, 저 커밋 잘되는듯
 //증발되지 말길..
+//졸려요
