@@ -20,7 +20,7 @@ android {
 
     buildTypes {
         buildFeatures {
-            viewBinding = true // 화면 이동을 위해 뷰바인딩 추가
+            viewBinding true // 화면 이동을 위해 뷰바인딩 추가
         }
         release {
             isMinifyEnabled = false

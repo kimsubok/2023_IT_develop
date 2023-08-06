@@ -9,15 +9,17 @@ import com.example.autoing.databinding.ActivityNaviBinding
 private const val TAG_CALENDER = "calender_fragment"
 private const val TAG_HOME = "home_fragment"
 private const val TAG_MY_PAGE = "my_page_fragment"
+private lateinit var binding: ActivityNaviBinding
 class NaviActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityNaviBinding.inflate(layoutInflater)
+        binding = ActivityNaviBinding.inflate(layoutInflater) // 1도 모르겠어요 그치만 해결해두겠음.
         setContentView(binding.root)
 
         setFragment(TAG_HOME, HomeFragment())
 
-        binding.navigationView.setOnItemSelectedListener { item ->
+        binding.navigationView.setOnItemSelectedListener {
+                item ->
             when(item.itemId) {
                 R.id.calenderFragment -> setFragment(TAG_CALENDER, CalenderFragment())
                 R.id.homeFragment -> setFragment(TAG_HOME, HomeFragment())
