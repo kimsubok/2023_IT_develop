@@ -53,8 +53,9 @@
     </form>
 
     <div>
-    <button onclick="window.location.href=\'다른페이지.php\'">다른 페이지로 이동</button>
-    </div>
+    <a href="regiExhibit_action.php">
+  <button>공모전 등록하기</button>
+</a></div>
 
 
     <?php
@@ -90,7 +91,7 @@
             
             while($row = $result->fetch_assoc()) {
                 echo "<tr>";
-                echo "<td>" . $row["title"] . "</td>";
+                echo '<td><a href="autoing_detail.php">' . $row["title"] . '</a></td>';
                 echo "<td>" . $row["area"] . "</td>";
                 echo "<td>" . $row["com_date"] . "</td>";
                 echo "<td>" . $row["host"] . "</td>";
@@ -105,8 +106,9 @@
     ?>
 
 <div style="position: absolute; top: 10px; right: 10px;">
-        <button onclick="window.location.href='다른페이지.php'">다른 페이지로 이동</button>
-    </div>
+<a href="유저등록하는파일명.php">
+  <button>유저 등록하기</button>
+</a>    </div>
 
 </body>
 </html>
