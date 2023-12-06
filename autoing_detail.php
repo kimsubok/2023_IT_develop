@@ -109,7 +109,7 @@
                     <?php
                     include 'connect.php';
 
-                    $sql = "SELECT tid, email, people FROM team, user WHERE tid = 1";
+                    $sql = "SELECT tid, email, people FROM team, user WHERE cid = 7 and team.uid = user.uid;";
 
                     $result = $connect->query($sql);
 
@@ -137,7 +137,7 @@
         </div>
     </main>
 
-    <button class="separate-button">팀 등록하기</button>
+    <a href="regiTeam_action.php"><button class="separate-button">팀 등록하기</button></a>
 
 </body>
 </html>

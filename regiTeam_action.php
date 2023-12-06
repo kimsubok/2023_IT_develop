@@ -53,17 +53,17 @@
     
         <form method="get" action="regiTeam_action.php">
             
-            <label for="exhibitID">공모전 아이디</label>
-            <input type="integer" name="exhibitID" id="exhibitID" placeholder="Enter Exhibition ID">
+            <label for="cid">공모전 아이디</label>
+            <input type="number" name="cid" id="cid" placeholder="Enter Exhibition ID">
 
-            <label for="teamSize">모집 인원 (1~4명)</label>
-            <input type="number" id="teamSize" name="teamSize"/>
+            <label for="people">모집 인원 (1~4명)</label>
+            <input type="number" id="people" name="people">
 
-            <label for="userId">유저 ID</label>
-            <input type="text" id="userId" name="userId" placeholder="Enter your ID" />
+            <label for="uid">유저 ID</label>
+            <input type="number" id="uid" name="uid" placeholder="Enter your ID">
 
             <label for="password">패스워드</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" />
+            <input type="password" id="password" name="password" placeholder="Enter your password">
 
             <button type="submit" class="btn btn-warning" style="float:right;" id="submit">팀 등록</button>
             
@@ -73,17 +73,15 @@
     include 'connect.php'; // mysql이랑 연결해주는 php파일 
 
     // 데이터 읽어오기
-    $exhibitID = isset($_GET['exhibitID']) ? $_GET['exhibitID'] : '';
-    $teamSize = isset($_GET['teamSize']) ? $_GET['teamSize'] : '';
-    $userID = isset($_GET['userID']) ? $_GET['userID'] : '';
+    $cid = isset($_GET['cid']) ? $_GET['cid'] : '';
+    $people = isset($_GET['people']) ? $_GET['people'] : '';
+    $uid = isset($_GET['uid']) ? $_GET['uid'] : '';
     $password = isset($_GET['password']) ? $_GET['password'] : '';
 
-    
-
-    if (!empty($userID)) {
+    if (!empty($uid)) {
 
         $sql = "INSERT into team (uid, people, cid)
-              values('$userID', '$teamSize', '$exhibitID')";
+              VALUES ('$uid', '$people', '$cid')";
 
         $result = $connect->query($sql);
 
