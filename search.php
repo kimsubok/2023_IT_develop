@@ -106,7 +106,7 @@
     ?>
 
 <div style="position: absolute; top: 10px; right: 10px;">
-<a href="유저등록하는파일명.php">
+<a href="RegiUser_action.php">
   <button>유저 등록하기</button>
 </a>    </div>
 
